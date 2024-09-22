@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 시계 -->
+     <span>
+         <p id="clock">00:00:00</p>
+     </span>
+     <hr id="clockHr">
+<!-- 날씨 -->
+     <div id="weatherDiv">
+        <span>현재 위치: </span>
+         <span id="city"></span>
+         <span>/ 날씨: </span>
+         <span id="weather"></span>
+     </div><br>
+     
+     <!-- 로그인 input과 인삿말 -->
+     <form id="loginForm" class="hidden">
+         <label for="idInput">이름:</label>
+         <input id="idInput" required placeholder="이름을 입력해 주세요">
+        <button id="button1">제출</button>
+        </form>
+        
+        <h3 class="hidden" id="greeting"></h3><hr id="clockHr">
+        
+        <br>
+        <form id="todoForm">
+            <label for="todoInput">★할 일★:</label>
+            <input id="todoInput" required placeholder="할 일 입력">
+           <button id="button2">등록</button>
+           </form>
+           
+        <!-- 할 일 적는 곳 -->
+        <ul id="todoList1">
+
+        </ul>
+
+        <script src="app.js"></script>
+        <script src="weather.js"></script>
+        <script src="login.js"></script>
+        <script src="todo.js"></script>
+</body>
+</body>
+</html>
